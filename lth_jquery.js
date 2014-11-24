@@ -15,6 +15,8 @@ jQuery(document).ready(function() {
     jQuery(".lth_show ul li.input").css({"float":"left","background":"#fff","margin":"2px","padding":"2px 5px;"});
     jQuery(".lth_show ul li.tag").css({"cursor":"help"});
     jQuery(".lth_show .lth_counter, .lth_show .lth_removed").css({"display":"none"});
+    jQuery(".lth_hidden").css({"float":"left","width":"0","height":"0","margin":"0","border":"0"});
+    
     
     //IF value existed, load the value shows tags
     jQuery('.lth_hidden').each( function (index, data) {

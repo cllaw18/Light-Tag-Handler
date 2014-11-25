@@ -18,7 +18,7 @@ Import the jQuery file and lth_jquery.js (or the modified javascript file lth_jq
 </code></pre>
 
 2) Import Javascript file
-Add a text input with class "lth_hidden" placing in a div tag with lth_group class.
+Add a text input with class "lth_hidden" placing in a div tag with "lth_group" class.
 
 <pre><code>&lt;div class="lth_group"&gt;
     &lt;input type="text" name="demo_3" class="lth_hidden" /&gt;
@@ -26,7 +26,7 @@ Add a text input with class "lth_hidden" placing in a div tag with lth_group cla
 </code></pre>
 
 
-If your page get more than one text input box with tag handler, you can just copy a few more set of the html shown above and edit the name attribute value (for example: demo_3) to make it works. The html code of the demonstration example in this page is shown below:
+If your page get more than one text input box with tag handler, you can just copy a few more set of the html shown above and edit the name attribute value (for example: demo_3) to make it works. The html code of the demonstration example is shown below:
 
 <pre><code>&lt;div class="lth_group"&gt;
     &lt;input type="text" <span class="user-mention">name="demo_1"</span> class="lth_hidden" value="1,2,3,4,5,6" /&gt;
@@ -43,15 +43,15 @@ If your page get more than one text input box with tag handler, you can just cop
 Input string and output string example
 --------------------------------------
 
-| Input string   | Output string   | Description  |
-| -------------- |:---------------:| ------------:|
-|"aaa"           |""| Ouput nothing|
-|"aaa,"          |"aaa"||
-|"a,b,c"         |"a,b"||
-|"a,b,c,"        |"a,b,c"||
-|" ,"            |""	Enter space and comma, get nothing and won't make any tag|
-|",a, ,b,,"      |"a,b"	Would remove all empty tag in output string.|
-|"apply, mango, pear,"|"apply,mango,pear"|This plugin would remove all space next to commas.|
+| Input string        | Output string     | Description  |
+| ------------------- |:----------------: | ------------:|
+|"aaa"                |""                 | Ouput nothing|
+|"aaa,"               |"aaa"              |              |
+|"a,b,c"              |"a,b"              |              |
+|"a,b,c,"             |"a,b,c"            |              |
+|" ,"                 |""                 | Enter space and comma, get nothing and won't make any tag|
+|",a, ,b,,"           |"a,b"              | Would remove all empty tag in output string.|
+|"apply, mango, pear,"|"apply,mango,pear" |This plugin would remove all space next to commas.|
 
 Update
 --------

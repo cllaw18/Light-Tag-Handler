@@ -23,7 +23,7 @@ var tag_radius_val  = "5px";                        //radius of tags
 var tag_input_handler_bg_color = "#ffffff";         //background color of your tag input box
 var tag_input_handler_border   = "1px solid #ccc";  //border of your tag input box 
 var tag_input_handler_width    = "100%";            //width of your tag input box
-var tag_input_handler_margin   = "2px";             //margin of your tag input box
+var tag_input_handler_margin   = "5px 2px 0px 2px"; //margin of your tag input box
 var tag_input_handler_padding  = "2px 5px";         //padding of your tag input box
 
 //tags' mouseover icon

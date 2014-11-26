@@ -1,6 +1,37 @@
+/*!
+ * Light Tag Handler v1.0
+ * https://github.com/soyosolution/Light-Tag-Handler
+ * http://tool.soyosolution.com/light-tag-handler 
+ *
+ * Includes jQuery Library
+ * http://www.jquery.com/
+ *
+ * Copyright 2014 Soyo Solution Company. and other contributors
+ * Released under the MIT license
+ * http://jquery.org/license
+ *
+ * Date: 2014-11-25
+ */
+
+//tags style
+var tag_bg_color    = "#eeeeee";                    //Background color of tags
+var tag_margin_val  = "7px 3px 0 3px";              //margin of tags
+var tag_pagging_val = "0 5px";                      //padding of tags
+var tag_radius_val  = "5px";                        //radius of tags
+
+//tag input boxes style
+var tag_input_handler_bg_color = "#ffffff";         //background color of your tag input box
+var tag_input_handler_border   = "1px solid #ccc";  //border of your tag input box 
+var tag_input_handler_width    = "100%";            //width of your tag input box
+var tag_input_handler_margin   = "2px";             //margin of your tag input box
+var tag_input_handler_padding  = "2px 5px";         //padding of your tag input box
+
+//tags' mouseover icon
+var cross_icon = " data:application/octet-stream;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJJJREFUeNpiZACCnp7e+UDKAIgdS0qKPzBAAVBcAEjtB+ILQPFERqjCBKj8BZgGJIUGULkFTEgcBih7P1ChAppCsBxIsSPURGQN99EUgm1kRHMbsgIGdKcxInlGAWoiOlAEKnwAYjAhmbyeATtYD5VnYCTgBBSnMGFRCJJQxOLp/UxogjDPPMASShcYSYlBgAADABQgQdJ6ze4GAAAAAElFTkSuQmCC"; //cursor icon when your mouse over the tag, in this case, it's a cross icon, you can use your image's url path.
+
+
 jQuery(document).ready(function() {
-    var cross_icon = " data:application/octet-stream;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJJJREFUeNpiZACCnp7e+UDKAIgdS0qKPzBAAVBcAEjtB+ILQPFERqjCBKj8BZgGJIUGULkFTEgcBih7P1ChAppCsBxIsSPURGQN99EUgm1kRHMbsgIGdKcxInlGAWoiOlAEKnwAYjAhmbyeATtYD5VnYCTgBBSnMGFRCJJQxOLp/UxogjDPPMASShcYSYlBgAADABQgQdJ6ze4GAAAAAElFTkSuQmCC";
-    var li_style = 'style="float:left; background:#eee; margin:2px; padding:0 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius:5px; cursor: url('+cross_icon+'), pointer;"';
+    var li_style = 'style="float:left; background:'+tag_bg_color+'; margin:'+tag_margin_val+'; padding:'+tag_pagging_val+'; -webkit-border-radius:'+tag_radius_val+'; -moz-border-radius:'+tag_radius_val+'; border-radius:'+tag_radius_val+'; cursor: url('+cross_icon+'), pointer;"';
     
     //Apply effect to all tag_handler group
     var inputbox = '<li class="input"><input type="text" class="lth_input"></li>';
@@ -10,10 +41,9 @@ jQuery(document).ready(function() {
     
     //apply css style
     jQuery(".lth_show *").css({"margin":"0","padding":"0","border":"0","display":"inline-block"});
-    jQuery(".lth_show").css({"border":"1px solid #ccc","background":"#fff","width":"100%"});
-    jQuery(".lth_show ul").css({"list-style-type":"none"});
-    jQuery(".lth_show ul li.input").css({"float":"left","background":"#fff","margin":"2px","padding":"2px 5px;"});
-    jQuery(".lth_show ul li.tag").css({"cursor":"help"});
+    jQuery(".lth_show").css({"border":tag_input_handler_border,"background":tag_input_handler_bg_color,"width":tag_input_handler_width});
+    jQuery(".lth_show ul").css({"list-style-type":"none","background":tag_input_handler_bg_color});
+    jQuery(".lth_show ul li.input").css({"float":"left","background":tag_input_handler_bg_color,"margin":tag_input_handler_margin,"padding":tag_input_handler_padding});
     jQuery(".lth_show .lth_counter, .lth_show .lth_removed").css({"display":"none"});
     jQuery(".lth_hidden").css({"float":"left","width":"0","height":"0","margin":"0","border":"0"});
     

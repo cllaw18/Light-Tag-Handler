@@ -8,6 +8,12 @@ For demo, you can visit this link for a try:
 
 http://tool.soyosolution.com/light-tag-handler/
 
+Browser Supported
+----------------------
+- Internet Explorer 9 +
+- Google Chrome
+- FireFox
+
 How to make it works ?
 ----------------------
 1) Import Javascript file

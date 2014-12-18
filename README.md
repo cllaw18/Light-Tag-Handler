@@ -3,7 +3,8 @@ Light-Tag-Handler
 
 Introduction
 ------------
-Input a list of words and separate by comma at the text input box. For example, you can input something like : `apply,mango,pear,` (<- type them, but not copy and paste) to type. if you input something wrong and what to remove the existing tags, you can simply click on the tag to remove it. 
+Light Tag Handler is a light jquery plugin, you can use it by import and js file only. 
+User can use that with inputing a list of words and separate by comma at the text input box. For example, you can input something like : `apply,mango,pear,` (<- type them, but not copy and paste) to type. if you input something wrong and what to remove the existing tags, you can simply click on the tag to remove it. 
 For demo, you can visit this link for a try:
 
 http://tool.soyosolution.com/light-tag-handler/
